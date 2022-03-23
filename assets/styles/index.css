@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'Oswald';
+  src: url(../fonts/Oswald-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Oswald;
+  min-height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  cursor: crosshair;
+  background: #EEE;
+}
+
+body h3 {
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+body .bubbleStyle {
+  position: absolute;
+  border-radius: 1000px;
+  background: #630b0b;
+  opacity: 0;
+  -webkit-filter: hue-rotate(0deg);
+          filter: hue-rotate(0deg);
+  -webkit-animation: bubbleAnim 6s forwards;
+          animation: bubbleAnim 6s forwards;
+}
+
+@-webkit-keyframes bubbleAnim {
+  to {
+    top: -300px;
+    left: var(--left);
+    opacity: 1;
+    -webkit-filter: hue-rotate(720deg);
+            filter: hue-rotate(720deg);
+  }
+}
+
+@keyframes bubbleAnim {
+  to {
+    top: -300px;
+    left: var(--left);
+    opacity: 1;
+    -webkit-filter: hue-rotate(720deg);
+            filter: hue-rotate(720deg);
+  }
+}
+/*# sourceMappingURL=index.css.map */
